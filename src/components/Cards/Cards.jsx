@@ -3,10 +3,10 @@ import Card from "../Card/Card.jsx";
 import s from "./Cards.module.css";
 
 export default function Cards({ cities, onClose, id }) {
-  if (cities.length) {
+  if (cities?.length) {
     return (
       <main className={s.containerCards}>
-        {cities.map((c) => (
+        {cities?.map((c) => (
           <Card
             key={c.id}
             max={c.max}

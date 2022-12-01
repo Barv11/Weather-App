@@ -1,0 +1,17 @@
+.fact {
+  /* width: 100px; */
+  padding: 1em;
+  flex-basis: 33%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 650px) {
+  .fact {
+    font-size: .9rem;
+  }
+}

@@ -1,0 +1,57 @@
+
+.form {
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5em;
+}
+.inputadd {
+  padding: 0 1.2em;
+  border: 1px solid var(--color-font-oscuro);
+  width: 70%;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 100px;
+  outline: none;
+}
+
+.inputadd:-internal-autofill-selected {
+  background-color: transparent;
+}
+
+.inputadd::placeholder {
+  color: var(--color-font-oscuro);
+  user-select: none;
+}
+
+.inputadd:focus {
+  transition: box-shadow 0.2s linear;
+  box-shadow: 0px 0px 10px 1px var(--color-metalico);
+}
+
+.inputbtn {
+  border: none;
+  background-color: var(--color-metalico);
+  height: 40px;
+  width: 30%;
+  border-radius:100px;
+  color: var(--color-fondo-alice-azul);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: box-shadow 0.2s linear;
+}
+
+.inputbtn:hover {
+  box-shadow: 0px 0px 10px 1px var(--color-metalico);
+}
+
+
+@media only screen and (max-width: 650px) {
+  .form {
+    width: 100%;
+  }
+  .inputadd {
+    width: 70%;
+  }
+}

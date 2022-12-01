@@ -12,6 +12,7 @@
 
 - __React.js__
 - __Api Externa__
+- __Local Storage__
 
 ## Frontend
 
